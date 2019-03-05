@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.header {position: absolute; top: 0; left: 0; width: 100%;}
+.header .hd-area .glb {background: rgba(255,255,255, .20);}
+.header .hd-area .glb {position: relative;}
+.header .hd-area .gNav .gnb > li > a {color: #fff;}
+.footer {margin-top: 0; background: #0d0d0d;}
+
+.mainBg {position: relative; width: 100%; height: 100%;}
+.mainBg .bgList {position: relative; width: 100%; height: 100%; overflow: hidden;}
+
+.mainBg .bgList .bg, .mainBg .bgPtn, .mainBg .bgPtn:before {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.mainBg .bgList .bg {}
+.mainBg .bgList .active {
+	z-index: 1;
+}
+.mainBg .bgList .scale {
+	transition: transform 1.5s;
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+.mainBg .bgList .bg-nth-1 {background: url(http://img.ocean2you-bike.co.kr/main/main_01.jpg) no-repeat center; background-size: cover;}
+.mainBg .bgList .bg-nth-2 {background: url(http://img.ocean2you-bike.co.kr/main/main_02.jpg) no-repeat center; background-size: cover;}
+.mainBg .bgList .bg-nth-3 {background: url(http://img.ocean2you-bike.co.kr/main/main_03.jpg) no-repeat center; background-size: cover;}
+.mainBg .bgPtn {/*background: url(http://img.ocean2you-bike.co.kr/main/ptn.png) repeat;*/ z-index: 1;}
+.mainBg .bgPtn:before {content: ""; background: rgba(0,0,0,0.4);}
+
+.mainBg .inTitle {position: absolute; top: 50%; left: 50%; width: 484px; height: 418px; margin-left: -242px; margin-top: -209px; z-index: 1;}
+
+.mainBg .inTitle .title {width: 484px; height: 326px; background: url(http://img.ocean2you-bike.co.kr/main/title.png) no-repeat center;
+	animation: title 3s ease infinite alternate;
+}
+
+.mainBg .inTitle .titleList {}
+.mainBg .inTitle .titleList .bg {position: absolute; left: 0; top: 0; width: 484px; height: 326px;}
+.mainBg .inTitle .titleList .active {z-index: 1;}
+.mainBg .inTitle .titleList .bg-nth-1 {background: url(http://img.ocean2you-bike.co.kr/main/title.png) no-repeat center; background-size: cover;}
+.mainBg .inTitle .titleList .bg-nth-2 {background: url(http://img.ocean2you-bike.co.kr/main/titleLight.png) no-repeat center; background-size: cover; opacity: 0;}
+
+/*.mainBg .inTitle .oc2Box {position: relative; width: 190px; margin: 50px auto 0;}*/
+.mainBg .inTitle .oc2Box {position: absolute; width: 100%; margin: 0 auto; text-align: center; bottom: 0;}
+.mainBg .inTitle .oc2Box .oc2-1 {
+	perspective: 400px;
+	animation: oc2-1 1s ease infinite alternate;
+}
+.mainBg .inTitle .oc2Box .oc2-2 {
+	perspective: 400px;
+	animation: oc2-2 1s ease infinite alternate;
+}
+@keyframes oc2-1 {
+	0% {transform: rotateX(0deg);}
+	50% {transform: rotateX(35deg);}
+	100% {transform: rotateX(0deg);}
+}
+@keyframes oc2-2 {
+	0% {transform: rotateX(0deg);}
+	50% {transform: rotateX(-35deg);}
+	100% {transform: rotateX(0deg);}
+}
+
+@keyframes title {
+	0% {background: url(http://img.ocean2you-bike.co.kr/main/title.png) no-repeat center;}
+	50% {background: url(http://img.ocean2you-bike.co.kr/main/titleLight.png) no-repeat center;}
+	100% {background: url(http://img.ocean2you-bike.co.kr/main/title.png) no-repeat center;}
+}
+
+.mainBg .inTitle .oc2Box .oc2-2 {}
+.mainBg .d-copy {position: absolute; width: 100%; bottom: 25px; text-align: center; color: #fff; text-transform: uppercase; font-size: 14px; z-index: 1;}

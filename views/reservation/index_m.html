@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>비에스앤리조트도고콘도</title>
+
+	<link rel="stylesheet" href="http://static.hotelgangneung.kr/css/moblie_reset.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css">
+	<link rel="stylesheet" href="http://static.hotelgangneung.kr/css/swiper.min.css" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="http://static.ocean2you-bike.co.kr/css/common.css">
+
+	<link rel="stylesheet" href="http://static.hotelgangneung.kr/css/mobile_layout3.css" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css">
+	
+	<link rel="stylesheet" type="text/css" href="http://static.ocean2you-bike.co.kr/css/reservation/init.css">
+	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="http://static.hotelgangneung.kr/js/swiper.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	
+	<script src="http://static.ocean2you-bike.co.kr/js/common.js"></script>
+
+	<script>
+		WebFont.load({
+			custom: {
+				families: ['Nanum Gothic', 'Noto Sans KR'],
+				urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css','http://fonts.googleapis.com/earlyaccess/notosanskr.css']
+			}
+		});
+	</script>
+
+</head>
+<body>
+
+	<h1 class="hidden">오션투유전동바이크</h1>
+
+	<div id="bike-wrap">
+
+		<header class="header" id="gnb-header">
+			<div class="hd-area clr">
+				<div class="glb clr">
+					<a href="../contents/index.html" class="gLogo"><img src="http://img.ocean2you-bike.co.kr/logo.png" alt="전동바이크로고"></a>
+
+					<nav class="gNav hidden-xs">
+						<ul class="gnb clr">
+							<li class="nth-1 on">
+								<a href="javascript:;" onclick="navi.move('#about-sec')">전동바이크</a>
+							</li>
+							<!--180118 객실서브 메튜 변경-->
+							<li class="nth-2">
+								<a href="javascript:;" onclick="navi.move('#guide-sec')">이용안내</a>
+							</li>
+							<li class="nth-3">
+								<a href="javascript:;" onclick="navi.move('#course-sec')">추천코스</a>
+							</li>
+							<li class="nth-4">
+								<a href="javascript:;" onclick="navi.move('#contact-sec')">오시는길</a>
+							</li>
+							<li class="nth-5">
+								<a class="f-bd" href="../reservation/index.html">예약확인</a>
+							</li>
+							<li class="nth-6">
+								<a class="f-bd" href="../reservation/index.html">바이크예약</a>
+							</li>
+						</ul>
+					</nav>
+
+					<button type="button" class="navTab-m show-xs" id="navTab-m">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<nav class="gNav-m" id="gNav-m">
+						<ul class="gnb-m clr">
+							<li>
+								<a href="javascript:;" onclick="navi.move('#about-sec')">전동바이크</a>
+							</li>
+							<li>
+								<a href="javascript:;" onclick="navi.move('#guide-sec')">이용안내</a>
+							</li>
+							<li>
+								<a href="javascript:;" onclick="navi.move('#course-sec')">추천코스</a>
+							</li>
+							<li>
+								<a href="javascript:;" onclick="navi.move('#contact-sec')">오시는길</a>
+							</li>
+							<li>
+								<a href="../reservation/index.html">예약확인</a>
+							</li>
+							<li>
+								<a href="../reservation/index.html">바이크예약</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+
+			</div>
+		</header>
+
+		<div class="main cf" id="main">
+			<section class="main-contents">
+				<h2 class="hidden">예약하기</h2>
+			</section>
+		</div>
+		
+		<!--예약 불러오기-->		
+		<div id="wrapper">
+			<div id="scroll_box">
+			
+			</div>
+		</div>
+		<!---->
+
+		<div class="clr"></div>
+		<footer class="footer">
+			<div class="container">
+
+				<div class="flt-1 clr hidden-xs">
+					<img class="f-logo" src="http://img.ocean2you-bike.co.kr/fLogo.png" alt="전동바이크">
+				</div>
+
+				<div class="flt-3 clr hidden-xs">
+					단체이용 및 전화문의<br> <span class="num">010 · 4429 · 0250</span><br>
+					(주중/주말 20시까지)
+				</div>
+
+				<div class="flt-box">
+					<ul class="f_menu">
+						<li><a href="javascript:;" onclick="$('#privacy-bg, #privacy-bg .term-wrap').show();">이용약관</a></li>
+						<li><a href="javascript:;" onclick="$('#privacy-bg, #privacy-bg .privacy-wrap').show();">개인정보처리방침</a></li>
+					</ul>
+
+					<div class="flt-1 clr hidden-md">
+						<img class="f-logo" src="http://img.ocean2you-bike.co.kr/fLogo.png" alt="전동바이크">
+					</div>
+					<div class="flt-3 clr hidden-md">
+						단체이용 및 전화문의 <span class="num">010 · 4429 · 0250</span><br>
+						(주중/주말 20시 까지)
+					</div>
+					<div class="flt-2 clr">
+						<address>
+							<p class="nth-1">
+								오션투유리조트 설악비치 호텔앤콘도 전동바이크<br>
+								대표자 : 박기범<br>
+								주소 : 강원 고성군 죽왕면 삼포해변길 9<br>
+								사업자등록번호 : 332-85-00016 <span class="i-l"></span> 통신판매업 : 제 2009-4290040-30-2-0033호
+					<!--							<a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2017452030130200193&pageUnit=10&searchCnd=bup_nm&searchKrwd=%EB%B9%84%EC%97%90%EC%8A%A4%ED%88%AC%EC%96%B4%EC%95%A4%EB%A6%AC%EC%A1%B0%ED%8A%B8&pageIndex=1" target="_blank" class="a-buisness">사업자정보확인 <span class="ic-rArrow rArrow"></span></a>-->
+								<!-- <span class="i-l"></span> 메일 :  --><br>
+
+								<small>COPYRIGHT ⓒ (주)오션투유리조트 설악비치 호텔앤콘도 전동바이크 ALL RIGHT RESERVED</small>
+							</p>
+						</address>
+					</div>
+				</div>
+
+
+			</div>
+		</footer>
+
+
+
+
+	</div>
+
+</body>
+</html>

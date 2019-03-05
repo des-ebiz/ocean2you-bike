@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/*모바일 스타일*/
+@media (max-width: 979px) {
+    section[class*=-sec].cm-s .p-fz-18 {font-size: 13px;} /* 20180313_삭제예정 */
+    
+    .container {width: 100%; box-sizing: border-box;}
+    /*공통 요소*/
+    section[class*=-sec].cm-s {position: relative; word-break: keep-all;}
+    section[class*=-sec].cm-s strong {font-size: 20px; margin-top: 30px; display: block; font-weight: 800; letter-spacing: -2px; text-align: center;}
+    section[class*=-sec].cm-s p[class^=p-fz] {line-height: 1.6;}
+    section[class*=-sec].cm-s .mt-30 {margin-top: 15px;}
+    section[class*=-sec].cm-s .p-fz-25 {font-size: 15px; font-weight: 700;}
+    .main-type2 section[class*=-sec].cm-s .p-fz-18 {font-size:12px;}
+    section[class*=-sec].cm-s .p-fz-18 .f-bd {display: block; margin-bottom: 10px;}
+    
+    .main-type2 section {padding:0 0 40px;}
+    .footer.mt-0 {margin-top:0;}
+
+    .contactPhone {position: relative; width: 100%; padding: 16px 0 24px; text-align: center; margin-top: 12px;}
+    .contactPhone.type-1 {background: #6f9fd5;}
+    .contactPhone.type-2 {background: #6fd5bc;}
+    .contactPhone.type-3 {background: #edbd84;}
+       /* 20180309_mt-0 멀티클래스 추가_다솜 */
+    .contactPhone .p-txt.mt-0 {margin-top:0;}
+    .contactPhone .p-txt.mt-0 + .p-tel {margin-top:10px;}
+    .contactPhone .p-tel, .contactPhone .p-txt {color: #fff;}
+    .contactPhone .p-tel {font-size: 18px; font-weight: 700;}
+    .contactPhone .p-tel span, .contactPhone .btnArea .a-btn span {vertical-align: middle; display: inline-block;}
+    .contactPhone .p-tel .f-sm, .contactPhone .btnArea .a-btn .f-sm  {font-size: 16px; font-weight: 400;}
+    .contactPhone .p-txt {font-size: 14px; margin-top: 10px; word-break: keep-all;}
+    .contactPhone .btnArea {margin-top: 15px; text-align: center;}
+    .contactPhone .btnArea .a-btn {position: relative; display: inline-block; height: 38px; padding: 0 29px; /* padding: 9px 29px; */ border-radius: 46px; background: #fff; font-size: 16px; font-weight: 700; line-height: 1.3; box-shadow: 0px 3px 10px 2px rgba(0,0,0,.25); box-sizing: border-box;}
+    .contactPhone .btnArea .a-btn:after {content: ""; display: inline-block; height: 110%; vertical-align: middle;}
+    .contactPhone.type-2 .btnArea .a-btn, .contactPhone.type-3 .btnArea .a-btn {background: none; box-shadow: none; border: 1px solid #fff; color: #fff;}
+    .contactPhone.type-2 .btnArea .a-btn span, .contactPhone.type-3 .btnArea .a-btn span {position: relative; top: -3px; line-height: 1;}
+
+    /*.about-sec p[class^=p-fz] {margin-top: 30px;}*/
+    .about-sec {}
+    .about-sec .cl-1 {color: #6f9fd5;}
+    .about-sec .imgBox {margin-top: 20px;}
+    .about-sec .imgBox .smallBox, .about-sec .imgBox figure {float: left;}
+    .about-sec .imgBox .smallBox {width: 100%;}
+    .about-sec .imgBox figure[class^=small] {width: 48.5%; margin-left: 3%; margin-top: 3%; float: left;}
+    .about-sec .imgBox figure[class^=small]:nth-child(2n-1) {margin-left: 0;}
+    .about-sec .imgBox figure[class^=small]:nth-child(1), .about-sec .imgBox figure[class^=small]:nth-child(2) {margin-top: 0;}
+    .about-sec .imgBox figure[class^=small] > img {width: 100%;}
+    .about-sec .imgBox figure.small-3 {border: 5px solid #6f9fd5; box-sizing: border-box; font-size: 50px; color: #6f9fd5; font-weight: 200; font-family: "Noto Sans KR", sans-serif; text-align: center; height: 100%; letter-spacing: 6px;}
+
+    .about-sec .imgBox figure.big-1 {margin-top: 3%;}
+    .about-sec figure.big-1 > img {width: 100%;}
+    
+    /* 20190304 사진추가 */
+    .about-sec .imgBox figure[class^=mid] {width: 100%; margin-top: 2%}
+    .about-sec .imgBox figure[class^=mid]:first-child {margin-top: 0;}
+    .about-sec .imgBox figure[class^=mid] img {width: 100%;}
+    
+    /* 20180313_guide-sec 삭제예정 */
+    .guide-sec .cl-1 {color: #6fd5bc;}
+    .guide-sec .s-row {position: relative; display: block;}
+    .guide-sec .s-row.dot {padding-left: 8px;}
+    .guide-sec .s-row.dot:before {content: ""; position: absolute; display: inline-block; width: 4px; height: 4px; background: #6fd5bc; left: 0; top: 8px;}
+    .guide-sec .guideList {position: relative; margin: 20px auto 10px;}
+    .guide-sec .guideList > li {float: left; box-sizing: border-box; border-left: 1px solid #c9c9c9; min-height: 180px; padding: 10px 0px; text-align: center; width: 33.33%;}
+    .guide-sec .guideList > li .p-figure {margin: 10px 0;}
+    .guide-sec .guideList > li:first-child {border: none;}
+    .guide-sec .guideList > li .p-figure img {position: relative; height: 52px;}
+    .guide-sec .guideList > li:nth-child(2) .p-figure img {left: 5px;}
+    .guide-sec .guideList .btn-pay-detail {display:inline-block; height:33px; padding:0 5px; letter-spacing:-1px; line-height:33px; text-align:center; border:2px solid #6fd5bc; border-radius:46px; color:#303030;}
+    
+    /* 20180312_가이드리스트 디자인 변경_다솜 */
+    section[class*=-sec].guide-type2 p[class^=p-fz] {line-height:1.7;}
+    .guide-type2 {background:url(http://img.ocean2you-bike.co.kr/main/bg_guide.jpg) no-repeat center center; background-size:cover}
+    .guide-type2 .cl-1 {color: #182e58;}
+    .guide-type2 .s-row {position: relative; display: block;}
+    .guide-type2 .s-row.dot {padding-left:10px;}
+    .guide-type2 .s-row.dot:before {content: ""; position: absolute; display: inline-block; width: 4px; height: 4px; left: 0; top: 8px; background: #192e58;}
+    .guide-type2 .guideList {position: relative; margin: 20px auto 10px;}
+    .guide-type2 .guideList > li {float:left; box-sizing: border-box; /*min-width:82px;*/ width:31.3%; height:200px; margin-left:10px; padding:10px 0; text-align:center; border:2px solid #5f7bb0; border-radius:10px; background:rgba(255, 255, 255, 0.73)}
+    .guide-type2 .guideList > li:first-child {margin-left:0; border:2px solid #5f7bb0;}
+    .guide-type2 .guideList > li .p-figure {margin: 10px 0;}
+    .guide-type2 .guideList > li .p-figure img {position: relative; height: 52px;}
+    .guide-type2 .guideList > li:nth-child(2) .p-figure img {left: 5px;}
+    .guide-type2 .guideList .btn-pay-detail {display:inline-block; padding: 0px 10px; letter-spacing:-1px; text-align:center; color:#303030; border:2px solid #395ea6; border-radius:46px; margin-top: 5px;}
+
+    .course-sec {}
+    .course-sec .cl-1 {color: #edbd84;}
+    .course-sec .courseList {margin-top: 18px;}
+    .course-sec .courseList > li {position: relative; float: left; overflow: hidden; box-sizing: border-box; border: 1px solid #c9c9c9; width: 49%; height: 46px; margin-left: 2%; margin-top: 2%; cursor: pointer; color: #979797;}
+    .course-sec .courseList > li.on {background: #eaaa5f; color: #fff;}
+    .course-sec .courseList > li:nth-child(2n-1) {margin-left: 0;}
+    .course-sec .courseList > li:nth-child(1), .course-sec .courseList > li:nth-child(2) {margin-top: 0;}
+    .course-sec .courseList > li .bgImg, .course-sec .courseList > li .d-bg {display: none;}
+    .course-sec .courseList > li .inTxt {text-align: center; padding-top: 11px;}
+    .course-sec .courseList > li .inTxt .p-fz-18,  .course-sec .courseList > li .inTxt .dArr {display: none;}
+    .course-sec .mapList {margin-top: 2%;}
+    .course-sec .mapList > li {display: none; color: #fff; width: 100%; box-sizing: border-box; background: #edbd84;}
+    .course-sec .mapList > li .area-info {padding: 15px;}
+    .course-sec .mapList > li .area-info + img {width: 100%;}
+    .course-sec .mapList > li.on {display: block;}
+    .course-sec .mapList > li p {word-break: keep-all;}
+    .course-sec .mapList > li p:first-child {margin-bottom: 15px;}
+    .course-sec .mapList > li .p-bottom {}
+    .course-sec .mapList > li .p-bottom-type2 {padding:7px 0;}
+
+    .contact-sec {}
+    .contact-sec .cl-1 {color: #1e3a5a;}
+    .contact-sec p.dot {position: relative; padding-left: 20px;}
+    .contact-sec p.dot:before {content: ""; position: absolute; display: inline-block; width: 5px; height: 5px; background: #000; top: 12px; left: 8px;}
+    .contact-sec .area-map {margin-top: 30px;}
+        .contact-sec .area-map iframe {height: 240px;}
+        /*다음지도*/
+    .contact-sec .area-map .mapBox > div {width: 100%;}       
+    .contact-sec .area-map .wrap_controllers {display: none;}     
+    
+    /* 20180309_오시는 길 변경_다솜 */
+    .contact-sec {background:#e1ecfa;}
+    .contact-sec .area-map.may-type02 {position: relative; overflow:hidden; width:100%; height:240px;}
+    .contact-sec .area-map .map-img {position: relative; height:100%; transform:scale(1.3); background:url(http://img.ocean2you-bike.co.kr/contents/map_waycome.jpg) center center no-repeat; background-size:cover;}
+    /*.contact-sec .area-map.type-img figure img {position:relative; height:100%; transform:scale(1.5);}*/
+    .contact-sec .area-map .btn-map-bigger {display:block; position:absolute; width:40px; height:40px; right:7px; bottom:8px; background:url(http://img.ocean2you-bike.co.kr/contents/btn_map_bigger.jpg) center center no-repeat; background-size:cover;}
+    .contact-sec .btn-waycome {display:block; position:relative; height:42px; margin:6px 7px; text-align:center; border:1px solid #c5c4c4; background:linear-gradient(#fafafa, #f1f1f1);}
+    .contact-sec .btn-waycome span {display:inline-block; position:relative; margin-left:-5px; padding-left:20px; font-size:14px; line-height:42px; color:#4b4b4b;}
+    .contact-sec .btn-waycome span:before {content:''; display:inline-block; position:absolute; width:16px; height:100%; left:0; background:url(http://img.ocean2you-bike.co.kr/contents/btn-bg-waycome.png) center center no-repeat; background-size:16px auto;}
+
+    
+}
+
+@media (max-device-width: 320px) {
+    .guide-sec .guideList .btn-pay-detail {height:33px; padding:0 3px; line-height:33px;}
+    .contact-sec .area-map .btn-map-bigger {width:35px; height:35px;}
+    .main-type2 section[class*=-sec].cm-s .p-fz-18 {font-size: 11px;}
+    .guide-type2 .guideList > li {width:31%;}
+}
+
+/*PC스타일*/
+@media (min-width: 980px) {
+    .container {width: 1200px;}
+    /*공통 요소*/
+    section.cm-s {position: relative; word-break: keep-all;}
+    section[class*=-sec].cm-s h2 {font-size: 60px; color: #c9c9c9; font-weight: 200; border-bottom: 1px solid #c9c9c9; line-height: 0.8; font-family: "Noto Sans KR", sans-serif; letter-spacing: 15px; margin-top: 100px;}
+    section[class*=-sec].cm-s h2 span {display: block; text-align: right;}
+    section[class*=-sec].cm-s strong {font-size: 50px; margin-top: 60px; display: block; font-weight: 800; letter-spacing: -2px;}
+    section[class*=-sec].cm-s:first-of-type strong {margin-top:30px}
+    section[class*=-sec].cm-s p[class^=p-fz] {line-height: 1.6;}
+    section[class*=-sec].cm-s .mt-30 {margin-top: 30px;}
+    section[class*=-sec].cm-s .p-fz-25 {font-size: 25px; font-weight: 700;}
+    section[class*=-sec].cm-s .p-fz-18 {font-size: 18px;}
+    section[class*=-sec].cm-s .p-fz-18 .f-bd {display: block; margin-bottom: 10px;}
+
+    .main-type2 section {padding:25px 0 100px;}
+    .main-type2 .guide-sec {padding-top:7px;}
+    .main-type2 .course-sec, .main-type2 .contact-sec {padding-bottom:140px;}
+    .main-type2 .contact-sec {padding-top:21px; background:#e1ecfa;}
+    .footer.mt-0 {margin-top:0;}
+
+    .contactPhone {position: relative; width: 100%; padding: 20px 0; text-align: center; margin-top: 30px;}
+    .contactPhone.type-1 {background: #6f9fd5;}
+    .contactPhone.type-2 {background: #6fd5bc;}
+    .contactPhone.type-3 {background: #edbd84;}
+    /* 20180309_간격조정을 위한 멀티클래스 추가_다솜 */
+    .contactPhone .p-txt.mt-0 {margin-top:0;}
+    .contactPhone .p-txt.mt-0 + .p-tel {margin-top:0px;}
+    
+    .contactPhone .p-tel, .contactPhone .p-txt {color: #fff;}
+    .contactPhone .p-tel {font-size: 25px; font-weight: 700;}
+    .contactPhone .p-tel span, .contactPhone .btnArea .a-btn span {vertical-align: middle; display: inline-block;}
+    .contactPhone .p-tel .f-sm, .contactPhone .btnArea .a-btn .f-sm  {font-size: 16px; font-weight: 400;}
+    .contactPhone .p-txt {font-size: 18px; margin-top: 10px;}
+    .contactPhone .btnArea {margin-top: 10px; text-align: center;}
+    .contactPhone .btnArea .a-btn {display: inline-block; height: 70px; padding: 0 58px; /* padding: 18px 58px; */ border-radius: 46px; background: #fff; font-size: 25px; font-weight: 700; line-height: 1.3; box-shadow: 0px 3px 10px 2px rgba(0,0,0,.25); box-sizing: border-box;}
+    .contactPhone .btnArea .a-btn:after {content: ""; display: inline-block; height: 110%; vertical-align: middle;}
+    .contactPhone.type-2 .btnArea .a-btn, .contactPhone.type-3 .btnArea .a-btn {background: none; box-shadow: none; border: 1px solid #fff; color: #fff;}
+    .contactPhone.type-2 .btnArea .a-btn span, .contactPhone.type-3 .btnArea .a-btn span {position: relative; top: -6px; line-height: 1;}
+
+    /*.about-sec p[class^=p-fz] {margin-top: 30px;}*/
+    .about-sec {padding: 0 !important;}
+    .about-sec .cl-1 {color: #6f9fd5;}
+    .about-sec .imgBox {margin-top: 40px;}
+    .about-sec .imgBox + .imgBox {margin-top: 10px;}
+    .about-sec .imgBox .smallBox, .about-sec .imgBox figure {float: left;}
+    .about-sec .imgBox .smallBox {width: 540px; margin-left: -10px; margin-top: -10px;}
+    .about-sec .imgBox figure[class^=small] {width: 250px; height: 190px; margin: 10px;}
+    .about-sec .imgBox figure.small-3 {border: 10px solid #6f9fd5; box-sizing: border-box; font-size: 50px; color: #6f9fd5; font-weight: 200; font-family: "Noto Sans KR", sans-serif; text-align: center; line-height:170px; letter-spacing: 6px;}
+    .about-sec .imgBox figure.big-1 {float: right;}
+    
+    /* 20190304 사진추가 */
+    .about-sec .imgBox figure[class^=mid] {float: left; margin-bottom: 25px;}
+    .about-sec .imgBox figure[class^=mid]:nth-child(2n) {float: right;}
+
+    /* 20180312_가이드리스트 디자인 변경_다솜 */
+    .guide-sec {}
+    section[class*=-sec].guide-type2 p[class^=p-fz] {line-height:1.7;}
+    .guide-type2 {background:url(http://img.ocean2you-bike.co.kr/main/bg_guide.jpg) no-repeat center center; background-size:cover}
+    .guide-type2 .cl-1 {color: #182e58;}
+    .guide-type2 .s-row {margin-left:9px; position: relative; display: block;}
+    .guide-type2 .s-row.dot {padding-left:14px;}
+    .guide-type2 .s-row.dot:before {content: ""; position: absolute; display: inline-block; width: 5px; height: 5px; left: 0; top: 14px; background: #192e58;}
+    .guide-type2 .guideList {position: relative; margin-top:73px; padding:0 50px;}
+    .guide-type2 .guideList > li {float:left; box-sizing: border-box; min-width:300px; width:auto; /*width:28%;*/ min-height:350px; margin-left:100px;/*margin-left:8%;*/ padding:43px 0; text-align:center; border:2px solid #5f7bb0; border-radius:10px; background:rgba(255, 255, 255, 0.73)}
+    .guide-type2 .guideList > li:first-child {margin-left:0; border:2px solid #5f7bb0;}
+    .guide-type2 .guideList li .p-figure {margin:25px 0 30px;}
+    .guide-type2 .guideList > li .p-figure img {position: relative; height: 70px;}
+    .guide-type2 .guideList .guide-list-02 .p-figure {margin-bottom:32px}
+    .guide-type2 .guideList .guide-list-03 .p-figure {margin-bottom:26px}
+    .guide-type2 .guideList .guide-list-01 .p-figure img {top:8px;}
+    .guide-type2 .guideList .guide-list-02 .p-figure img {left: 5px;}
+    .guide-type2 .guideList .guide-list-03 .p-figure img {top:1px;}
+    .guide-type2 .guideList .btn-pay-detail {display:inline-block; padding:4px 31px 8px; letter-spacing:-1px; text-align:center; border:2px solid #395ea6; border-radius:46px; color:#303030; margin-top: 15px;}
+
+    .course-sec {}
+    .course-sec .cl-1 {color: #edbd84;}
+    .course-sec .courseList {margin-top: 35px;}
+    .course-sec .courseList > li {position: relative; float: left; overflow: hidden; box-sizing: border-box; border: 1px solid #c9c9c9; border-bottom-width: 2px; border-radius: 10px; margin: 0 10px; width: 285px; height: 150px; cursor: pointer;}
+    .ie8 .course-sec .courseList > li {margin: 0 8px;}
+    .course-sec .courseList > li:first-child {margin-left: 0px;}
+    .course-sec .courseList > li:last-child {margin-right: 0px;}
+    .course-sec .courseList > li .d-bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%; /*background: rgba(0,0,0,.3);*/}
+    .ie8 .course-sec .courseList > li .d-bg {position: absolute; background: #000; filter: alpha(opacity=70);}
+    /* 20180315_추천투어코스 수정_다솜 */
+    .course-sec .courseList > li.on .d-bg {display:none}
+    /*.course-sec .courseList > li.on .d-bg, .course-sec .courseList > li.on .inTxt {display: none;}*/
+    .course-sec .courseList > li .d-bg sppan {position: relative;}
+    .course-sec .courseList > li .d-bg .s-1 {position: absolute; top: 0; left: 0; border: 0px solid transparent; border-left: 285px solid rgba(0, 0, 0, 0.75); border-bottom-width: 150px;}
+    .course-sec .courseList > li .d-bg .s-2 {position: absolute; top: 0; left: 0; border: 0px solid transparent; border-right: 285px solid rgba(0, 0, 0, 0.7); border-top-width: 150px;}
+    .course-sec .courseList > li .inTxt {position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: #fff; text-align: center; box-sizing: border-box; padding-top: 14px;}
+    .course-sec .courseList > li .inTxt h3:first-child {margin-bottom: 0px; /*margin-top: 20px;*/}
+    .course-sec .courseList > li .inTxt .p-fz-18 {margin-top:10px;}
+    .course-sec .courseList > li .inTxt .dArr {position: absolute; bottom: 16px; left: 50%; margin-left: -17.5px;}
+    .course-sec .mapList {margin-top: 20px;}
+    .course-sec .mapList > li {float: left; display: none; color: #fff; width: 100%; height: 500px; box-sizing: border-box; padding: 58px 782px 0 38px;}
+    .course-sec .mapList > li.on {display: block;}
+    .course-sec .mapList > li.nth-1 {background: #edbd84 url(http://img.ocean2you-bike.co.kr/contents/map_01.jpg) no-repeat top right;}
+    .course-sec .mapList > li.nth-2 {background: #edbd84 url(http://img.ocean2you-bike.co.kr/contents/map_02.jpg) no-repeat top right;}
+    .course-sec .mapList > li.nth-3 {background: #edbd84 url(http://img.ocean2you-bike.co.kr/contents/map_03.jpg) no-repeat top right;}
+    .course-sec .mapList > li.nth-4 {background: #edbd84 url(http://img.ocean2you-bike.co.kr/contents/map_04.jpg) no-repeat top right;}
+    .course-sec .mapList > li p {word-break: keep-all;}
+    .course-sec .mapList > li p:first-child {margin-bottom: 30px;}
+    .course-sec .mapList > li .p-bottom {position: absolute; bottom: 58px; width: 500px;}
+    .course-sec .mapList > li .p-bottom-type2 {position:absolute; bottom:118px; width:500px;}
+
+    .contact-sec .cl-1 {color: #1e3a5a;}
+    .contact-sec p.dot {position: relative; padding-left: 20px;}
+    .contact-sec p.dot:before {content: ""; position: absolute; display: inline-block; width: 5px; height: 5px; background: #000; top: 12px; left: 8px;}
+    .contact-sec .area-map {margin-top: 30px;}
+    .contact-sec .area-map iframe {height: 500px;}
+
+    .contact-sec .area-map {width:1200px; margin: 0 auto; margin-top: 30px;}
+    .contact-sec .area-map .mapBox > div {width: 100%;}       
+
+    /* 20180309_오시는 길 변경_다솜 */
+    .contact-sec .area-map.may-type02 {position:relative; height:500px;}
+    .contact-sec .area-map .map-img {position:relative; height:100%; background:url(http://img.ocean2you-bike.co.kr/contents/map_waycome.jpg) center center no-repeat; background-size:cover;}
+    .contact-sec .area-map .btn-map-bigger {display:block; position:absolute; width:51px; height:51px; right:18px; bottom:14px; background:url(http://img.ocean2you-bike.co.kr/contents/btn_map_bigger.jpg) center center no-repeat; background-size:cover;}
+    .contact-sec .btn-waycome {display:none;}
+
+    
+}
