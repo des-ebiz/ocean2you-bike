@@ -76,7 +76,6 @@ body, a {color: #303030;}
 .header .hd-area .glb {position: fixed; height: 100px; z-index: 1; top: 0px; width: 100%; background: #fff; border-bottom: 0; box-shadow: 0 0px 12px 3px rgba(0,0,0,.3);}
 .ie8 .header .hd-area .glb {border-bottom: 1px solid #aeaeae;}
 
-.rWing {position: fixed; top: 220px; z-index: 9; left: 50%; margin-left: 520px;}
 .footer {margin-top: 80px;}
 
 
@@ -84,7 +83,10 @@ body, a {color: #303030;}
 	.container {padding-left: 2%; padding-right: 2%;}
 	.container-f {width: 100%;}
 	
-	.rWing {position: fixed; top: 220px; z-index: 9; left: 50%; margin-left: 520px;}
+	.rWing {position: fixed; z-index: 9; top: 220px; right: 10px;}
+    .rWing a {display: block; position: relative;}
+    .rWing a + a {margin-top: 5px;}
+    .rWing a img {position: relative; width: 100%;}
 	#goTop {position: fixed; width: 40px; height: 40px; right: 10px; bottom: 10px;}
 	#goTop > img {width: 100%;}
 	.rtBookingBn {position: fixed; display: block; right: 6px; bottom: 65px;background: rgba(38, 154, 255, 0.76); font-size: 14px; color: #fff; line-height: 1.2; text-align: center; box-sizing: border-box; padding: 8px 20px; box-shadow: 1px 2px 2px 2px rgba(0,0,0, 0.2); letter-spacing: -0.5px;}
@@ -292,7 +294,10 @@ body, a {color: #303030;}
 	.contact-pop.type-2 {position: relative; top: 0; text-align: left; width: 100%; left: auto; margin-left: 0;}
 }
 @media (max-width: 767px) {
-	.rWing {display: none;}
+	.rWing {display: inline-block; position: fixed; z-index: 9; top: auto; right: 7px; bottom: 60px; }
+    .rWing a {display: block; position: relative; width: 80px;}
+    .rWing a + a {margin-top: 5px;}
+    .rWing a img {position: relative; width: 100%;}
 }
 @media (max-device-width: 320px) {
 	.privacy-bg .cm-s {width: 310px; margin-left: -155px;}
@@ -325,72 +330,18 @@ body, a {color: #303030;}
 	
 	.header .gNav-m {display: none;}
 	
-	.rWing {position: fixed; top: 220px; z-index: 9; left: 50%; margin-left: 640px;}
+	
+	.rWing {position: fixed; z-index: 9; top: 220px; right: 10px;}
+    .rWing a {display: block; position: relative;}
+    .rWing a + a {margin-top: 5px;}
+    .rWing a img {position: relative; width: 100%;}
+    
 	#goTop {position: fixed; width: 40px; height: 40px; right: 10px; bottom: 10px;}
 	#goTop > img {width: 100%;}
 	.rtBookingBn {position: fixed; display: block; right: 6px; bottom: 65px;background: rgba(38, 154, 255, 0.76); font-size: 14px; color: #fff; line-height: 1.2; text-align: center; box-sizing: border-box; padding: 8px 20px; box-shadow: 1px 2px 2px 2px rgba(0,0,0, 0.2); letter-spacing: -0.5px;}
 	.rtBookingBn img {width: 19px; margin-bottom: 2px;}
 	#goTop, .rtBookingBn {display: none;}
 	
-	/* 20180319 기존 푸터 */
-	/*.footer {background: #1e3a5a; padding: 50px 0 55px; fff}
-	.footer .container {position: relative; margin: 0 auto;}
-	.footer .container div[class*=flt-] {position: relative; color: #fff; float: left;}
-	.footer .flt-box {margin-left: 35px; padding-left: 35px;}
-	.footer .flt-box:before {content: ""; width: 1px; height: 150px; background: #fff; position: absolute; left: 0; top: 0;}
-	.footer .f_menu {margin-bottom: 15px;}
-	.footer .f_menu > li {position: relative; display: inline-block; margin-left: 40px;}
-	.footer .f_menu > li:before {position: absolute; top: 3px; left: -20px; content: ""; display: inline-block; width: 1px; height: 14px; background: #cdcdcd;}
-	.footer .f_menu > li:first-child {margin-left: 0px;}
-	.footer .f_menu > li:first-child:before {display: none;}
-	.footer .f_menu > li > a {color: #fff;}
-	.footer .flt-1 {margin-left: 40px;}
-	.footer .flt-2 address {line-height: 1.5;}
-	.footer .flt-2 address .i-l {position: relative; display: inline-block; top: 1px; width: 1px; height: 12px; background: #cdcdcd; margin: 0 11px;}
-	
-	.footer .container div[class^=flt-3] {float: right; margin-right: 40px; text-align: right; font-weight: 700; font-size: 18px;}
-	.footer .container div[class^=flt-3] .num {font-size: 26px;}
-	.footer .container div[class^=flt-3] .mt-1 {display: block; margin-top: 15px;}*/
-	
-	/* 20180319 하단에 오션투유와 같은 디자인의 css 추가 */
-	/*
-	.footer .container {width: 1400px;}
-	.footer * {box-sizing: border-box;}
-	.footer {box-sizing: border-box; background: #1e3a5a; padding:15px 0 65px; font-size: 16px;}
-	.footer .container {position: relative;}
-	.footer .container div[class*=flt-] {position: relative; float: left; color: #fff;}
-	.footer .f_menu {padding: 15px 0;}
-	.footer .f_menu > li {position: relative; display: inline-block; margin-left: 40px;}
-	.footer .f_menu > li:before {position: absolute; top: 1px; left: -20px; content: ""; display: inline-block; width: 1px; height: 14px; background: #fff;}
-	.footer .f_menu > li:first-child {margin-left: 215px;}
-	.footer .f_menu > li:first-child:before {display: none;}
-	.footer .f_menu > li > a {color: #fff; font-size: 15px;}
-	.footer .flt-1 {margin: -5px 44px 0 00px; width: 170px;}
-	.footer .flt-1 img {position: relative; display: block;}
-	.footer .flt-1 .f-gcLogo {left: 5px; padding-top: 5px;}
-	.footer .flt-2 {width: 1180px;}
-	.footer .flt-2 address {line-height: 1.5; box-sizing: border-box;}
-	.footer .flt-2 addressp { box-sizing: border-box;}
-	.footer .flt-2 address .i-l {position: relative; display: inline-block; top: 1px; width: 1px; height: 12px; background: #cdcdcd; margin: 0 11px;}
-	.footer .cf-box {font-family: "Nanum Gothic", sans-serif; color: #fff; width: 100%; letter-spacing: -0.5px;}
-	.footer .cf-box > .p-0 {display: none;}
-	.footer .cf-in {position: relative; width: 100%; font-size: 0;}
-	.footer .cf-in .callFor {position: absolute; text-align: center; display: inline-block; margin-top: 15px; margin-left: 4px; border: 1px solid #fff; border-radius: 2px; padding: 0; padding: 8px 0px 0 0; width: 240px; height: 124px; right: 212px; box-sizing: border-box; z-index: 1; color: #fff;}
-	.footer .cf-in .callFor:first-child {margin-left: 0;}
-	.footer .cf-in .callFor > span {display: block; width: 100%; line-height: 1.5;}
-	.footer .cf-in .callFor.cf1, .footer .cf-in .callFor.cf2 {width: 235px; top: -110px; right:0;}
-	.footer .cf-in .callFor.cf1 {right: 240px;}
-	.footer .cf-in .s1, .footer .cf-in .s3  {font-size: 17px; font-weight: 700; letter-spacing: 0;}
-	.footer .cf-in .s1 {margin-top: 2px;}
-	.footer .cf-in .s3 {margin-top: 3px; font-size: 18px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; font-weight: 500;}
-	.footer .cf-in .s3 > img {width: auto; position: relative; top: -1px;}
-	.footer .cf-in .mg- {}
-	.footer .cf-in .s1-2  {font-size: 17px; margin-top: 1px;}
-	.footer .cf-in .callFor > .s1-2:last-child {margin-top: 2px; margin-bottom: 6px; font-size: 14px; letter-spacing: 0;}
-	.footer .cf-in .callFor.cf0 {line-height: 1.4; border: 0;}
-	.footer .mt {margin-top:30px}
-	.footer .nth-1.mt {margin-top:0}
-	*/
 	/* 20180320 푸터 css 정리 및 수정 */
 	.footer {padding:20px 0 65px; font-size:16px; color:#fff; background:#1e3a5a;}
 	.footer * {box-sizing: border-box;}
@@ -524,10 +475,6 @@ body, a {color: #303030;}
 	
 	.header .d1 {position: absolute; right: 584px; top: 32px;}
 	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
-}
-/*오른쪽 날개배너*/
-@media (min-width: 980px) and (max-width: 1550px) {
-	.rWing {margin-left: 0; left: auto; right: 10px;}
 }
 
 

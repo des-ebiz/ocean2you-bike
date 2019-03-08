@@ -5,6 +5,11 @@
 	display: block !important;
 }
 
+.rWing {position: fixed; z-index: 9; top: 220px; right: 10px;}
+.rWing a {display: block; position: relative;}
+.rWing a + a {margin-top: 5px;}
+.rWing a img {position: relative; width: 100%;}
+
 .header .hd-area .gLogo {position: absolute; left: 30px; display: inline-block; height: 100%; background: #1f395a; line-height: 94px; padding: 0 28px;}
 .header .hd-area .gLogo > img {}
 .header .hd-area .gNav {float: right; top: 0px;}
