@@ -185,6 +185,14 @@ body, a {color: #303030;}
 	.footer .cf-in .s1-2  {font-size: 12px; line-height: 16px; margin-top: 5px; word-break: keep-all;}
 	.footer .cf-in .callFor > .s1-2:last-child {margin-top: -2px; margin-bottom: 3px; letter-spacing: -2px !important; font-size: 11px; font-family: "Dotum", sans-serif;}*/
 	
+	.spot {position: relative; width: 100%; height: 150px; background: url("http://img.ocean2you-bike.co.kr/common/spot.jpg") no-repeat -50px center / cover; margin-bottom: 10px; text-align: center; font-family: "Noto Sans KR", sans-serif;}
+	.spot h1 {position: relative; top: 45px;}
+	.spot .dp-block {display: block;}
+	.spot .tit {color: #fff;}
+	.spot .tit.tit-1 {font-size: 14px; font-weight: 400;}
+	.spot .tit.tit-2 {font-size: 18px;}
+	.spot .line {margin: 10px auto 12px; width: 38px; height: 1px; background: #fff;}
+	
 	/* 20180320 푸터 css 정리 및 수정 */
 	.footer {padding:20px 0 40px; background:#1e3a5a;}
 	.footer * {box-sizing: border-box; font-size:13px; color:#fff;}
@@ -293,12 +301,14 @@ body, a {color: #303030;}
 	
 	.contact-pop.type-2 {position: relative; top: 0; text-align: left; width: 100%; left: auto; margin-left: 0;}
 }
+
 @media (max-width: 767px) {
 	.rWing {display: inline-block; position: fixed; z-index: 9; top: auto; right: 7px; bottom: 60px; }
     .rWing a {display: block; position: relative; width: 80px;}
     .rWing a + a {margin-top: 5px;}
     .rWing a img {position: relative; width: 100%;}
 }
+
 @media (max-device-width: 320px) {
 	.privacy-bg .cm-s {width: 310px; margin-left: -155px;}
 
@@ -330,17 +340,24 @@ body, a {color: #303030;}
 	
 	.header .gNav-m {display: none;}
 	
-	
 	.rWing {position: fixed; z-index: 9; top: 220px; right: 10px;}
     .rWing a {display: block; position: relative;}
     .rWing a + a {margin-top: 5px;}
     .rWing a img {position: relative; width: 100%;}
-    
+	
 	#goTop {position: fixed; width: 40px; height: 40px; right: 10px; bottom: 10px;}
 	#goTop > img {width: 100%;}
 	.rtBookingBn {position: fixed; display: block; right: 6px; bottom: 65px;background: rgba(38, 154, 255, 0.76); font-size: 14px; color: #fff; line-height: 1.2; text-align: center; box-sizing: border-box; padding: 8px 20px; box-shadow: 1px 2px 2px 2px rgba(0,0,0, 0.2); letter-spacing: -0.5px;}
 	.rtBookingBn img {width: 19px; margin-bottom: 2px;}
 	#goTop, .rtBookingBn {display: none;}
+	
+	.spot {position: relative; width: 100%; height: 300px; background: url("http://img.ocean2you-bike.co.kr/common/spot.jpg") no-repeat center / cover; margin-bottom: 10px; text-align: center; font-family: "Noto Sans KR", sans-serif;}
+	.spot h1 {position: relative; top: 70px;}
+	.spot .dp-block {display: block;}
+	.spot .tit {color: #fff;}
+	.spot .tit.tit-1 {font-size: 28px; font-weight: 400;}
+	.spot .tit.tit-2 {font-size: 50px;}
+	.spot .line {margin: 20px auto 22px; width: 76px; height: 1px; background: #fff;}
 	
 	/* 20180320 푸터 css 정리 및 수정 */
 	.footer {padding:20px 0 65px; font-size:16px; color:#fff; background:#1e3a5a;}
